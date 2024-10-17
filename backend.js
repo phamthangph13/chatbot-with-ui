@@ -3,10 +3,9 @@ document.getElementById('send-btn').addEventListener('click', function() {
     if (userInput.trim() !== '') {
         addMessage('User', userInput);
         document.getElementById('user-input').value = '';
-        // Simulate a response from the chatbot
-        setTimeout(() => {
-            addMessage('Bot', 'This is a simulated response.');
-        }, 1000);
+        
+        // Send the message to the chatbot and get the response
+        sendMessageToChatbot(userInput);
     }
 });
 
@@ -30,3 +29,23 @@ function addMessage(sender, message) {
     chatBox.appendChild(messageElement);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
+
+async function sendMessageToChatbot(message) {
+    try {
+        const response = await fetch('http://127.0.0.1:5000/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message: message })
+        });
+        const data = await response.json();
+        addMessage('Bot', data.response); // Add the actual response from the chatbot
+    } catch (error) {
+        console.error('Error:', error);
+        addMessage('Bot', 'Sorry, there was an error processing your request.');
+    }
+}
+
+// Example usage
+sendMessageToChatbot("Hello, how are you?");

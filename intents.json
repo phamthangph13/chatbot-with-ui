@@ -1,0 +1,126 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+      "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+      "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+      "responses": ["My pleasure", "You're Welcome"],
+      "context": [""]
+    },
+    {
+      "tag": "query",
+      "patterns": ["What is Simplilearn?"],
+      "responses": ["Simplilearn is the popular online Bootcamp & online courses learning platform."],
+      "context": [""]
+    },
+    {
+      "tag": "heart_disease_intro",
+      "patterns": ["What is heart disease?", "Tell me about heart disease", "Can you explain heart disease?", "What causes heart disease?"],
+      "responses": ["Heart disease refers to a range of conditions that affect the heart, including coronary artery disease, heart attacks, and heart failure. It is often caused by factors like high blood pressure, high cholesterol, smoking, and diabetes."],
+      "context": [""]
+    },
+    {
+      "tag": "heart_disease_symptoms",
+      "patterns": ["What are the symptoms of heart disease?", "How do I know if I have heart disease?", "List the symptoms of heart disease", "What should I look for regarding heart disease?"],
+      "responses": ["Common symptoms of heart disease include chest pain or discomfort, shortness of breath, pain in the neck, jaw, or back, nausea, and lightheadedness. If you experience these symptoms, it's important to consult a healthcare professional."],
+      "context": [""]
+    },
+    {
+      "tag": "heart_disease_risk_factors",
+      "patterns": ["What are the risk factors for heart disease?", "How can I reduce my risk of heart disease?", "Tell me about heart disease risk factors", "What increases my risk for heart disease?"],
+      "responses": ["Risk factors for heart disease include high blood pressure, high cholesterol, smoking, obesity, lack of physical activity, diabetes, and a family history of heart disease. Managing these factors can help reduce your risk."],
+      "context": [""]
+    },
+    {
+      "tag": "heart_disease_prevention",
+      "patterns": ["How can I prevent heart disease?", "What steps can I take to avoid heart disease?", "Give me tips to prevent heart disease", "How do I protect myself from heart disease?"],
+      "responses": ["Preventing heart disease involves maintaining a healthy lifestyle. This includes eating a balanced diet, exercising regularly, not smoking, managing stress, and keeping your blood pressure and cholesterol levels in check."],
+      "context": [""]
+    },
+    {
+      "tag": "heart_disease_treatment",
+      "patterns": ["How is heart disease treated?", "What are the treatments for heart disease?", "Tell me about heart disease treatments", "How do doctors treat heart disease?"],
+      "responses": ["Treatment for heart disease depends on the specific condition and may include lifestyle changes, medications, and procedures such as angioplasty or surgery. Consult with a healthcare provider for a treatment plan tailored to your needs."],
+      "context": [""]
+    },
+    {
+      "tag": "heart_disease_statistics",
+      "patterns": ["What are the statistics for heart disease?", "How common is heart disease?", "Give me heart disease statistics", "Tell me about heart disease prevalence"],
+      "responses": ["Heart disease is a leading cause of death globally. According to the World Health Organization, cardiovascular diseases are responsible for an estimated 17.9 million deaths each year, representing 32% of all global deaths."],
+      "context": [""]
+    },
+    {
+      "tag": "predict_heart_disease",
+      "patterns": ["I want to check for heart disease", "Predict heart disease", "Can you analyze my heart disease risk?", "Help me predict heart disease"],
+      "responses": ["Please provide your details for a heart disease prediction. I need information like age, sex, chest pain type, blood pressure, cholesterol levels, and other relevant health indicators."],
+      "context": [""]
+    },
+    {
+      "tag": "predict_heart_disease_provide_data",
+      "patterns": [
+        "Here is my data",
+        "I have the information",
+        "Submit my data for prediction",
+        "Provide the following details"
+      ],
+      "responses": [
+        "Thank you for providing your details. Please ensure you include the following in your response: age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise induced angina, old peak, slope of the peak exercise ST segment, number of major vessels colored by fluoroscopy, and thalassemia.",
+        "I am ready to receive your health data. Please provide your age, sex, chest pain type, resting blood pressure, cholesterol levels, fasting blood sugar, resting ECG results, maximum heart rate achieved, exercise induced angina status, old peak, slope, number of vessels, and thalassemia status."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "predict_heart_disease_error",
+      "patterns": ["I got an error", "There was an issue with the prediction", "I faced a problem", "Something went wrong"],
+      "responses": ["I’m sorry, there was an issue processing your prediction. Please check your data and try again. If the problem persists, contact support."],
+      "context": [""]
+    },
+    {
+      "tag": "plot_prediction",
+      "patterns": ["Show me the prediction plot", "Plot the prediction result", "Give me the prediction chart"],
+      "responses": ["Generating a plot of your prediction result. Please wait a moment."],
+      "context": [""]
+    },
+    {
+      "tag": "plot_model_accuracy",
+      "patterns": ["Show model accuracy", "Plot model accuracy", "Give me model accuracy comparison"],
+      "responses": ["Generating a plot of model accuracy. Please wait a moment."],
+      "context": [""]
+    },
+    {
+      "tag": "plot_target_distribution",
+      "patterns": ["Show target distribution", "Plot target distribution", "Give me the target distribution chart"],
+      "responses": ["Generating a plot of target distribution. Please wait a moment."],
+      "context": [""]
+    },
+    {
+      "tag": "plot_data_distribution",
+      "patterns": ["Show data distribution", "Plot data distribution", "Give me the data distribution chart"],
+      "responses": ["Generating a plot of data distribution. Please wait a moment."],
+      "context": [""]
+    },
+    {
+      "tag": "plot_chart",
+      "patterns": ["Show me the chart", "Plot a chart", "Give me the chart for analysis"],
+      "responses": ["Generating a generic chart. Please wait a moment."],
+      "context": [""]
+    },
+    {
+      "tag": "plot_feature_comparison",
+      "patterns": ["Compare my features", "Plot feature comparison", "Show feature comparison"],
+      "responses": ["Generating a comparison plot of your features with average values. Please wait a moment."],
+      "context": [""]
+    }
+  ]
+}
